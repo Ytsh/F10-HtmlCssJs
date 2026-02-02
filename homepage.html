@@ -48,6 +48,26 @@
         .style-ul{
             list-style-type:none;
         }
+        /* Can be for mobile */
+        @media (max-width: 600px){
+            .main{
+                background-color: tomato;
+            }
+            .sidebar{
+                display: none;
+            }
+            
+        }
+        /* Can be for tablet */
+        @media (min-width:600px) and (max-width: 1020px){
+            .main{
+                background-color: chartreuse;
+            }
+            .sidebar{
+                width: 120px;
+            }
+        }
+
     </style>
 </head>
 

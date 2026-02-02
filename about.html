@@ -74,6 +74,44 @@
     display: grid -> it creates 2D layout system
         grid-tempalte-columns: 1fr 200px 2fr;
 
+
+
+
+
+        position:
+            
+        static - by default. it is normal document flow.
+        -   top/left does not work.
+
+        relative - Element are still in flow but we can shift it.
+            - It moves relative to it's original position.
+            -- The space it occupied stays there.
+
+        absolute - Element is removed from normal flow.
+            - It looks for it's nearest positioned ancestor (non-static ancestor).
+            =   If no positioned ancestor found, the viewport /body becomes the reference.
+            - - The ancestor becoms the reference/ (0,0).
+            - Absolute positioning says - place me inside my nearest positioned ancestor.
+
+        Fixed - Like absolute but the coordinate saystem is always the viewport.
+            - It does not care about parents.
+            It odesnt move when scrolling.
+            It is permanently pinned to the screen.
+        sticky - It has a dynamic coordinate system.
+            -It acts like relative in normal flow but when scrolling it reaches a 
+                threshold and switches to fixed.
+            - It is limited by it's parent's box, meaning it cannnot escape it's container.
+
+        we have top, left, buttom, right. it moves the element accordingly.
+
+        top:0px
+        left:200px
+        left:-200px;
+
+    z-index - When two or more items are stacked on each other, 
+                we can use z-index to determine who comes first and who goes to last.
+
+
     -->
 
 
